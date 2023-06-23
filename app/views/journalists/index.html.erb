@@ -1,0 +1,13 @@
+<h1>Journalists#index</h1>
+<p>Find me in app/views/journalists/index.html.erb</p>
+
+<p>Cantidad de posts: <%= @journalists.count %><p>
+
+<% @journalists.each do |journalist|%>
+  <h2><%= journalist.name %></h2>
+  <h2><%= journalist.lastname %></h2>
+   <h2><%= journalist.specilaty %></h2>
+
+<% end %>
+
+<%= link_to "Agregar nuevo Journalist", journalists_new_path %>

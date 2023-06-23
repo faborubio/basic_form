@@ -1,0 +1,23 @@
+<h1>Posts#new</h1>
+<p>Find me in app/views/posts/new.html.erb</p>
+
+
+
+<div class="justify-content-center">
+  <div class="card col-6">
+    <%= form_with model: @post, method: :post do |form| %>
+      <div class="mb-3">
+        <%= form.label :title, "Post Title", class:"form-label" %>
+        <%= form.text_field :title, class:"form-control" %>
+      </div>
+      <div class="mb-5">
+        <%= form.label :content, "Post Content", class:"form-label" %>
+        <%= form.text_field :content, class:"form-control" %>
+      </div>
+
+      <div class="text-center">
+        <%= form.submit "Enviar", class: "btn btn-blue" %>
+      </div>
+    <% end %>
+  </div>
+</div>

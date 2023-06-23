@@ -1,0 +1,4 @@
+class Journalist < ApplicationRecord
+
+
+end
